@@ -52,6 +52,7 @@ let currentBackupAttemptId = null; // 存储最新一次备份尝试的唯一ID
 
 // --- 表格UI监听相关 ---
 let metadataHashOnDrawerOpen = null; // 抽屉打开时的元数据哈希值
+let tableDrawerElement = null; // 添加全局变量声明，用于保存抽屉元素引用
 
 // 优化的高效哈希函数 - 专为比较优化，非加密用途
 function fastHash(str) {
